@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+<meta name="generator" content="Hugo 0.16-DEV" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="stylesheet" href="/css/skeleton.css" />
+		<link rel="stylesheet" href="/css/overpass.css" />
+		<link rel="stylesheet" href="/css/custom.css" />
+		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="görn.name" />
+		<title>The road ahead, what if a Nulecule really leaves the nest?! - görn.name</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">&nbsp;</div>
+			</div>
+			<div class="header clearfix">
+				<div class="row">
+					<div class="col-md-8"><img src="http://graphics.b4mad-service.net/B42u-small.jpg" alt="#B4mad" /></div>
+					<div class="col-md-4"><h1>B:\datenbrei <span style="color: white;"><blink>_</blink></span></h1><p>Collaborating individuals - All Knowledge on one Floppy</p></div>
+				</div>
+			</div>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">The road ahead, what if a Nulecule really leaves the nest?!</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2015-12-15">December 15, 2015</time></span>
+			<section itemprop="entry-text">
+				<div class="sect1">
+<h2 id="_preface">Preface</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>During the past half year I was involved in the invention and development of
+the <a href="http://www.projectatomic.io/docs/nulecule/">Nulecule Specification</a> and its reference implementation <a href="https://github.com/projectatomic/atomicapp">Atomic App</a>.
+While we have come from a very small team hacking some python code, development of
+Atomic App is now hosted by the <a href="https://www.redhat.com/mailman/listinfo/container-tools">container-tools team of Red Hat</a>.</p>
+</div>
+<div class="paragraph">
+<p>We have seem some requirements and have had some reality checks, but the goal
+of the Nulecule Specification remains unchanged:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Package once. Run anywhere.</p>
+</li>
+<li>
+<p>Compose applications from a catalog.</p>
+</li>
+<li>
+<p>"MSI Installer for containers".</p>
+</li>
+<li>
+<p>Change runtime parameters for different environments.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With this article I will explore a little deeper on our goals and what we
+archived. Additionally I will put some more goal on the list, as they have
+come up over the past iterations [of development].</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_current_state">Current State</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Nulecule Specification itself is undergoing a reality check: we are starting
+to use it for Red Hat&#8217;s own products, like our <a href="https://github.com/BitScoutOrg/nulecule-elasticsearch/blob/master/Nulecule">BitScout&#8217;s elasticsearch</a>,
+but also for products of our ISVs, like <a href="https://github.com/kanarip/kolab-atomicapp">Kolab</a>.</p>
+</div>
+<div class="paragraph">
+<p>We have some requests for extensions and some unclear formulations what have or
+will be fixed.</p>
+</div>
+<div class="paragraph">
+<p>During the course of <a href="http://europe-2015.dockercon.com/">DockerCon</a> talk with <a href="https://github.com/helm/helm">other</a> <a href="https://giantswarm.io/">initiatives</a> have been started to
+explore the opportunities to collaborate.</p>
+</div>
+<div class="paragraph">
+<p>So in summary: we try to keep the Nulecule Specification alive and validate
+opportunities to extend it and make it more usable/adopted.</p>
+</div>
+<div class="paragraph">
+<p>Moving from the specification to the implementation, we have made great progress,
+<a href="https://github.com/projectatomic/atomicapp/milestones/CDK%202%20GA">Atomic App has
+a roadmap to it&#8217;s GA release</a>, it is shared on github.
+Some providers (that is platforms atomicapp can deploy to) have been implemented,
+beside <a href="http://kubernetes.io/">Kubernetes</a> and <a href="https://www.openshift.org/">OpenShift</a>
+there is a first version of a <a href="https://github.com/projectatomic/atomicapp/pull/392">Marathon provider</a>.</p>
+</div>
+<div class="paragraph">
+<p>Implementing the Nulecule Specification is on a good track, Atomic App it the
+reference implementation, and I have experimented with a few aspects of the
+Nulecule Specification with <a href="https://github.com/goern/grasshopper">Grasshopper</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_findings">Findings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>First of all, it was a hard task to extend the team of three hackers to a powerful
+and organized group. This is a finding for me: one needs to talk more in person
+and in detail if such a early handover is to be done.</p>
+</div>
+<div class="paragraph">
+<p>Getting ISV (or application developers) on the train is also hard. Even though
+we have provided some examples, there is a need for a
+<a href="https://github.com/projectatomic/nulecule/issues/162#issuecomment-137359068">walk
+through style turorial</a>.</p>
+</div>
+<div class="paragraph">
+<p>The Nulecule Specification is good and 'kind of complete' &#8482; but it lacks
+adoption, so we need to get a lot better on the marketing track, a shiny website,
+more involvement in other communities, more talks&#8230;&#8203; more of eveything!</p>
+</div>
+<div class="paragraph">
+<p>By now the Nulecule Specification is focused on multi container applications.
+The aspect of a library of reusable components is widely ignored by now. We need
+to come back to this and think of it as a quality kickstart for developers.
+<a href="https://gist.github.com/vpavlin/5d81cfa2853548e24666">Vašek has started the
+<em>atomicapp index</em> command</a>, but it lacks&#8230;&#8203; marketing and support by
+container-tools team.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.redhat.com/archives/container-tools/2015-June/msg00036.html">Integration with cockpit</a>
+is not receiving enough love, Cockpit is a perfect web based user interface to
+be 'the MSI installer' part of the Nulecule/Atomic App story, but sometimes
+things bork&#8230;&#8203;</p>
+</div>
+<div class="sect2">
+<h3 id="_new_requirements">New Requirements</h3>
+<div class="paragraph">
+<p>For me, there is one more thing to do: deeper integration of the Nulecule
+Specification and application definition. If we take a closer look at how an
+Atomic App works, we see that the Nulecule is a layer of meta data ontop of the
+containers themselves. I think we can give a bigger value to persons responsible
+to deploy and run an application by thighly couple the Nulecule and application
+description. We could generate parts of the one from the other, we can reuse
+information present in the application on the Nulecule layer.</p>
+</div>
+<div class="paragraph">
+<p>Again, I have started <a href="https://github.com/goern/grasshopper/wiki#welcome-to-the-grasshopper-wiki">some experiments with grasshopper</a>
+which need to be picked up and brought forward in a more structured way.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To conclude the first year of Nulecule and Atomic App work: it&#8217;s hard to kick off
+a new thing, and it needs a lot of work, on the marketing aspects, on community and
+collaboration and on technical aspects.</p>
+</div>
+<div class="paragraph">
+<p>If I want to help with the 'definition of Application Entity' the tight integration
+of Nulecule and Kubernetes/OpenShift configurations needs to get some more focus.</p>
+</div>
+</div>
+</div>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="footer-link">
+			<a href="mailto:christoph@goern.name" target="_blank">Email</a></span>
+			<a href="https://twitter.com/goern" target="_blank">Twitter</a></span>
+			<a href="https://www.facebook.com/christoph.goern" target="_blank">Facebook</a></span>
+			<a href="https://github.com/goern/" target="_blank">GitHub</a></span>
+		</div>
+		<div class="copyright">Copyright &copy; Christoph Görn - Licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">a creative commons licence</a> - If other terms are applicable it is explicitly noted.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
